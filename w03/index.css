@@ -1,0 +1,75 @@
+.calculator-body {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  font-family: sans-serif;
+
+  .calculator {
+    width: 270px;
+
+    .outer {
+      border: 3px solid rgb(2, 1, 1);
+      border-radius: 18px 18px 0 0;
+      background-color: rgb(68, 68, 68);
+
+      .inner {
+        border: 5px solid rgb(70, 68, 68);
+        border-radius: 15px;
+        padding: 5px;
+        background-color: rgb(255, 252, 252);
+        background-image: linear-gradient(to bottom right, white, gray);
+
+        .screen {
+          border: 1px solid rgb(19, 18, 18);
+          border-radius: 10px;
+          height: 2.5rem;
+          background-color: rgb(53, 228, 228);
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          padding: 0 0.5rem 0.25rem 0.5rem;
+          font-size: 1.75rem;
+          margin-top: 25px;
+        }
+
+        .btn-row {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+
+          button {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+          }
+
+          .green {
+            background-color: rgb(155, 249, 140);
+          }
+
+          .red {
+            background-color: rgb(226, 62, 62);
+            background-image: linear-gradient(
+              to bottom right,
+              rgba(248, 193, 193, 0.434),
+              rgba(192, 131, 131, 0.434)
+            );
+          }
+          .purple {
+            background-color: rgb(241, 98, 241);
+          }
+        }
+      }
+
+      .student {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: monospace;
+        font-size: 1.15rem;
+      }
+    }
+  }
+}
